@@ -7,7 +7,7 @@ export default function Cards(props) {
         <div className="card-header">Total de casos</div>
         <div className="card-body">
           <h1 className="card-text">
-            {props.totalCasos}
+            {props.loading ? props.gifLoading : props.totalCasos}
           </h1>
         </div>
       </div>
@@ -15,7 +15,7 @@ export default function Cards(props) {
         <div className="card-header">Óbitos hoje</div>
         <div className="card-body">
           <h1 className="card-text">
-            {props.obitosHoje}
+            {props.loading ? props.gifLoading : props.obitosHoje}
           </h1>
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function Cards(props) {
         <div className="card-header">Total de mortos</div>
         <div className="card-body">
           <h1 className="card-text">
-            {props.mortesTotal}
+            {props.loading ? props.gifLoading : props.mortesTotal}
           </h1>
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function Cards(props) {
         <div className="card-header">Casos hoje</div>
         <div className="card-body">
           <h1 className="card-text">
-            {props.casosHoje}
+            {props.loading ? props.gifLoading : props.casosHoje}
           </h1>
         </div>
       </div>
@@ -40,7 +40,7 @@ export default function Cards(props) {
         <div className="card-header">Total de recuperados</div>
         <div className="card-body">
           <h1 className="card-text">
-            {props.recuperados}
+            {props.loading ? props.gifLoading : props.recuperados}
           </h1>
         </div>
       </div>
